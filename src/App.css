@@ -1,0 +1,154 @@
+.logo {
+  width: 175px;
+  position: fixed;
+  left: 10%;
+}
+
+
+nav a {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  margin-left: 1.25rem;
+  transition: 0.2s;
+  flex-wrap: wrap;
+}
+
+nav a:hover {
+  color: #EB4B33;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0%
+}
+
+.button-container {
+  position: fixed;
+  right: 10%;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 0%;
+  top: 4%
+}
+
+
+.sign-in {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+}
+
+.register {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: white;
+  background-color: #EB4B33;
+  border: none;
+  height: 46px;
+  width: 116px;
+  border-radius: 4px;
+}
+
+.sign-in:hover {
+  cursor: pointer;
+}
+
+.register:hover {
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+.icons {
+  position:absolute;
+  right: 5%;
+  font-size: 2.8rem;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+
+/* BREAKPOINTS */
+
+/* @media (max-width: 992px) {
+  .header {
+    padding: 1.3rem 5%
+  }
+} */
+
+@media (max-width: 1057px) {
+  .logo {
+    width: 100px;
+    position: fixed;
+    left: 10%;
+  }
+
+  #check:checked~.icons #burger {
+    display: none;
+  }
+
+  .icons #x {
+  display: none
+}
+
+#check:checked~.icons #x {
+  display: block;
+}
+
+  .icons {
+    display: inline-flex
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    /* background-color: rgb(216, 37, 37); */
+    overflow: hidden;
+    transition: .3s ease;
+  }
+
+  #check:checked~.navbar {
+    height: 20rem;
+  }
+
+  .navbar a {
+    display: block;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: .3s ease
+  }
+
+  #check:checked~.navbar a {
+    transform: translateY(0);
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    margin: 15rem -5rem;
+  }
+}
