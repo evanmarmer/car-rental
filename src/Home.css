@@ -1,0 +1,87 @@
+.hero {
+    position: fixed;
+    max-width: 55%;
+    width: 55%;
+    padding: 17rem 45rem;
+}
+
+.text-container1 {
+    position: fixed;
+    font-family: 'Outfit', sans-serif;
+    margin-left: 10%;
+    padding: 27rem 0rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+h2 {
+    margin-top:.5rem;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+#big {
+    color: #EB4B33;
+}
+
+.buttons1 {
+    position: fixed;
+    margin-left: 10%;
+    padding: 47rem 0rem;
+
+}
+
+.book {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    background-color: #EB4B33;
+    border: none;
+    height: 46px;
+    width: 140px;
+    border-radius: 4px;
+    margin-right: 1rem;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.learn {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    background-color: #000000;
+    border: none;
+    height: 46px;
+    width: 140px;
+    border-radius: 4px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.learn:hover {
+    cursor: pointer;
+  }
+
+.book:hover {
+    cursor: pointer;
+  }
+
+
+
+
+@media (max-width: 1057px) {
+    .hero{ 
+        display: none;
+    }
+}

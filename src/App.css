@@ -61,6 +61,7 @@ header {
   height: 46px;
   width: 116px;
   border-radius: 4px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
 }
 
 .sign-in:hover {

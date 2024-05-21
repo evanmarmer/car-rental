@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Home from './Home'
 
 function App() {
   
@@ -26,10 +27,8 @@ function App() {
             <button className='register'>Register</button>
           </div>
         </nav>
-
-
       </header>
-      
+      <Home/>
     
     </>
   )
